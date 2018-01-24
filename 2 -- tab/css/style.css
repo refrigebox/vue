@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 600px;
+    height: 400px;
+    background: #FFFFCC;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+ul li {
+    list-style: none;
+}
+
+.box ul {
+    height: 60px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.box ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    line-height: 60px;
+}
+
+.active {
+    background: skyblue;
+    color: #FFF;
+}
+
+.center {
+    text-align: center;
+    line-height: 358px;
+}
