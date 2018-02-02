@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "fs": "^0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-webserver": "^0.9.1",
+    "path": "^0.12.7"
+  }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class='box'>
+        <ul id="uls"></ul>
+        <ol id="ols">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ol>  
+        <div>
+            <span id="left">&lt;</span>
+            <span id="right">&gt;</span>
+        </div>
+    </div>
+    <script src="js/demo.js"></script>
+    <script>
+        loadImg("img/img1.jpg").then((oImg)=>{
+            console.log(oImg)
+        })
+        let uls=document.getElementById("uls");
+        let str='';
+        ajax("http://localhost:8090/data").then(function(data){
+             let result=JSON.parse(data);
+            //  result.map(function(item){
+            //     str+=`<img src=${item}>`
+            //  });
+            //  uls.innerHTML=str;
+            result.map((item)=>{
+                loadImg(item).then((data)=>{
+                    let lis=document.createElement("li");
+                    lis.appendChild(data);
+                    uls.appendChild(lis)
+                })
+            })
+        })
+
+        
+       new Carousel()
+        
+    </script>
+</body>
+</html>
