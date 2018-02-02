@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "dev": "webpack --config webpack.config.js"
+  },
+  "devDependencies": {}
+}
