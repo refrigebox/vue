@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>异步加载图片 - 下拉</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div id="images"></div>
+    <script type="text/javascript" src="js/loadImage.js"></script>
+    <script type="text/javascript">
+    new AsyncLoadImages({
+        id: "images",
+        flag:true,
+        page: 1
+    })
+    </script>
+</body>
+
+</html>
